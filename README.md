@@ -1,51 +1,33 @@
-# Welcome to your Expo app 👋
+# Urdocto - Frontend Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Application mobile pour la gestion des rendez-vous médicaux avec React Native et Expo.
 
-## Get started
+## Technologies
 
-1. Install dependencies
+- React Native & Expo
+- Redux Toolkit pour la gestion d'état
+- Expo Router pour la navigation
+- Axios pour les requêtes API
 
-   ```bash
-   npm install
-   ```
+## Structure
 
-2. Start the app
+- `RootLayout.tsx` : wrapper Redux + auth
+- `screens/` : écrans principaux (Home, Profile, Doctors, Appointments, Login, Register)
+- `components/` : composants réutilisables (CommonHeader, DoctorCard, SearchBar, etc.)
+- `store/` : slices Redux (auth, doctors)
+- `constants/colors.ts` : palette de couleurs
 
-   ```bash
-   npx expo start
-   ```
+## Fonctionnalités
 
-In the output, you'll find options to open the app in a
+- Authentification (email / téléphone)
+- Gestion du profil utilisateur
+- Liste et recherche de médecins
+- Vue des rendez-vous (bientôt disponible)
+- Navigation par onglets
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Lancement
 
 ```bash
-npm run reset-project
+npm install
+expo start
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# bignovatest-frontend
